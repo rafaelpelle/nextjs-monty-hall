@@ -1,9 +1,11 @@
 import Prize from '../coponents/Prize';
+import Door from '../coponents/Door';
 
 export default function Home() {
   return (
     <div>
-      <Prize />
+      {/* <Prize /> */}
+      <Door />
     </div>
   );
 }

@@ -1,2 +1,47 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: var(--door-height);
+  width: var(--door-width);
+  margin: 5px;
+}
+
+.frame {
+  display: flex;
+  flex-grow: 1;
+  border-top: 10px solid var(--dark-brown);
+  border-left: 10px solid var(--dark-brown);
+  border-right: 10px solid var(--dark-brown);
+  width: 90%;
+}
+
 .door {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: var(--brown);
+  align-items: center;
+  padding: 15px;
+}
+
+.number {
+  font-size: 3rem;
+}
+
+.knob {
+  position: absolute;
+  top: 50%;
+  align-self: flex-start;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--dark-brown);
+}
+
+.floor {
+  height: 10px;
+  width: 100%;
+  background-color: var(--light-gray);
 }
