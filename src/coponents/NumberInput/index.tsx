@@ -1,3 +1,5 @@
+import ChevronUp from '../Icons/ChevronUp';
+import ChevronDown from '../Icons/ChevronDown';
 import styles from './NumberInput.module.css';
 
 interface Props {
@@ -16,8 +18,12 @@ export default function NumberInput({ label, value, onChange }: Props) {
       <div className={styles.valueContainer}>
         <span className={styles.value}>{value}</span>
         <div className={styles.buttonContainer}>
-          <button onClick={handleIncrease}>+</button>
-          <button onClick={handleDecrease}>-</button>
+          <button onClick={handleDecrease}>
+            <ChevronDown />
+          </button>
+          <button onClick={handleIncrease}>
+            <ChevronUp />
+          </button>
         </div>
       </div>
     </div>
