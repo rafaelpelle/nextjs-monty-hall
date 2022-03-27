@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--door-width);
+  width: var(--door-width);
+  margin: 5px;
+  padding: 20px;
+}
+
+.container > h1 {
+  font-size: 2.5rem;
+}
