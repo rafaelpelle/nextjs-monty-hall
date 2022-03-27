@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       {/* <Prize /> */}
-      <Door />
+      <Door number={1} />
     </div>
   );
 }

@@ -45,3 +45,17 @@
   width: 100%;
   background-color: var(--light-gray);
 }
+
+.selected {
+  border-top: 10px solid var(--yellow);
+  border-left: 10px solid var(--yellow);
+  border-right: 10px solid var(--yellow);
+}
+
+.selected .number {
+  color: var(--yellow);
+}
+
+.selected .knob {
+  background-color: var(--yellow);
+}
