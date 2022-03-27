@@ -7,7 +7,7 @@ export default function Game() {
   const router = useRouter();
   const { doorAmount, prizedDoor } = router?.query;
 
-  const { isReady, doors, handleSelectDoor } = useMontyHallGame(
+  const { isReady, doors, handleSelectDoor, handleOpenDoor } = useMontyHallGame(
     Number(doorAmount),
     Number(prizedDoor),
   );
@@ -20,6 +20,7 @@ export default function Game() {
             key={door.number}
             door={door}
             handleSelectDoor={handleSelectDoor}
+            handleOpenDoor={handleOpenDoor}
           />
         ))}
       </div>

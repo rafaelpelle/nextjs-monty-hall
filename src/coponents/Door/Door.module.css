@@ -15,6 +15,7 @@
   border-left: 10px solid var(--dark-brown);
   border-right: 10px solid var(--dark-brown);
   width: 90%;
+  background-color: #0005;
 }
 
 .door {
@@ -58,4 +59,9 @@
 
 .selected .knob {
   background-color: var(--yellow);
+}
+
+.opened {
+  justify-content: center;
+  align-items: flex-end;
 }

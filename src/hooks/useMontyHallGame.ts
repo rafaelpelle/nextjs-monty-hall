@@ -21,6 +21,16 @@ export function useMontyHallGame(doorAmount: number, prizedDoor: number) {
     );
   };
 
+  const handleOpenDoor = (doorNumber: number) => {
+    setDoors(
+      doors.map((door) =>
+        door.number !== doorNumber
+          ? { ...door }
+          : { ...door, isOpen: true, isSelected: false },
+      ),
+    );
+  };
+
   const initializeDoors = useCallback(() => {
     if (doorAmount >= 2 && prizedDoor >= 1) {
       setDoors(
@@ -45,5 +55,6 @@ export function useMontyHallGame(doorAmount: number, prizedDoor: number) {
     isReady,
     doors,
     handleSelectDoor,
+    handleOpenDoor,
   };
 }
