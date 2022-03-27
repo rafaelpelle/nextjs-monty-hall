@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMontyHallGame } from '../hooks/useMontyHallGame';
 import Door from '../coponents/Door';
@@ -24,6 +25,10 @@ export default function Game() {
           />
         ))}
       </div>
+
+      <Link href="/" passHref>
+        <button className={styles.backButton}>REINICIAR O JOGO</button>
+      </Link>
     </div>
   ) : null;
 }

@@ -16,6 +16,10 @@ a {
   box-sizing: border-box;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 :root {
   --door-height: 310px;
   --door-width: 200px;

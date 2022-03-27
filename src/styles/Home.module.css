@@ -1,21 +1,11 @@
-.gameContainer {
+.homeContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-.doorsContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.backButton {
-  margin-top: 50px;
-  width: max-content;
+.startButton {
   padding: 15px 35px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -23,7 +13,7 @@
   border: 3px solid black;
 }
 
-.backButton:hover {
+.startButton:hover {
   border: 3px solid yellow;
   color: yellow;
 }
