@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useMontyHallGame } from '../hooks/useMontyHallGame';
 import Door from '../coponents/Door';
+import styles from '../styles/Game.module.css';
 
 export default function Game() {
   const router = useRouter();
@@ -12,10 +13,12 @@ export default function Game() {
   );
 
   return isReady ? (
-    <div>
-      {doors.map((door) => (
-        <Door key={door.number} door={door} />
-      ))}
+    <div className={styles.gameContainer}>
+      <div className={styles.doorsContainer}>
+        {doors.map((door) => (
+          <Door key={door.number} door={door} />
+        ))}
+      </div>
     </div>
   ) : null;
 }
