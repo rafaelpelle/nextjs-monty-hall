@@ -1,6 +1,13 @@
 import styles from './Door.module.css';
+import { DoorModel } from '../../types/model';
 
-export default function Door({ isSelected, number }) {
+interface Props {
+  door: DoorModel;
+}
+
+export default function Door({ door }: Props) {
+  const { number, isSelected, isOpen, hasPrize } = door;
+
   const isSelectedClass = isSelected ? styles.selected : '';
 
   return (
